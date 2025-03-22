@@ -1,15 +1,16 @@
 # Dual-Focus-raindrop-Removal
-This project is for NTIRE Workshop and Challenges @ CVPR 2025  on Day and Night Raindrop Removal for Dual-Focused Images
+This project is for NTIRE Workshop and Challenges @ CVPR 2025  on Day and Night Raindrop Removal for Dual-Focused Images.
+We have used the Restormer Network!!. https://openaccess.thecvf.com/content/CVPR2022/papers/Zamir_Restormer_Efficient_Transformer_for_High-Resolution_Image_Restoration_CVPR_2022_paper.pdf
 
-# RainDropRestormer: Efficient Transformer for High-Resolution Image Restoration 
+# Restormer: Efficient Transformer for High-Resolution Image Restoration 
 
-#### News
+<!-- #### News
 - **April 4, 2022:** Integrated into [Huggingface Spaces 🤗](https://huggingface.co/spaces) using [Gradio](https://github.com/gradio-app/gradio). Try out the web demo: [![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/swzamir/Restormer)
 - **March 30, 2022:** Added Colab Demo. [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1C2818h7KnjNv4R1sabe14_AYL7lWhmu6?usp=sharing)
 - **March 29, 2022:** Restormer is selected for an ORAL presentation at CVPR 2022 :dizzy:
 - **March 10, 2022:** Training codes are released :fire:
 - **March 3, 2022:** Paper accepted at CVPR 2022 :tada: 
-- **Nov 21, 2021:** Testing codes and pre-trained models are released!
+- **Nov 21, 2021:** Testing codes and pre-trained models are released! -->
 
 <hr />
 
@@ -146,10 +147,10 @@ If you use Restormer, please consider citing:
 Should you have any question, please contact waqas.zamir@inceptioniai.org
 
 
-**Acknowledgment:** This code is based on the [BasicSR](https://github.com/xinntao/BasicSR) toolbox and [HINet](https://github.com/megvii-model/HINet). 
+**Acknowledgment:** This code is completely based on the [Restormer](https://github.com/swz30/Restormer.git). 
 
-## Our Related Works
+<!-- ## Our Related Works
 - Learning Enriched Features for Fast Image Restoration and Enhancement, TPAMI 2022. [Paper](https://www.waqaszamir.com/publication/zamir-2022-mirnetv2/) | [Code](https://github.com/swz30/MIRNetv2)
 - Multi-Stage Progressive Image Restoration, CVPR 2021. [Paper](https://arxiv.org/abs/2102.02808) | [Code](https://github.com/swz30/MPRNet)
 - Learning Enriched Features for Real Image Restoration and Enhancement, ECCV 2020. [Paper](https://arxiv.org/abs/2003.06792) | [Code](https://github.com/swz30/MIRNet)
-- CycleISP: Real Image Restoration via Improved Data Synthesis, CVPR 2020. [Paper](https://arxiv.org/abs/2003.07761) | [Code](https://github.com/swz30/CycleISP)
+- CycleISP: Real Image Restoration via Improved Data Synthesis, CVPR 2020. [Paper](https://arxiv.org/abs/2003.07761) | [Code](https://github.com/swz30/CycleISP) -->
