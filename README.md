@@ -27,7 +27,7 @@ See [INSTALL.md](INSTALL.md) for the installation of dependencies required to ru
 
 ## Demo
 
-To test our models of [Raindrop_Removal](https://drive.google.com/drive/folders/1ZEDDEVW0UgkpWi-N4Lj_JUoVChGXCu_u) on your image, you can use command line as following
+To test our models of [Raindrop_Removal](https://drive.google.com/file/d/1nDNIm7Y-ksPoW-qg6MZGLUT5EJp8ib7d/view?usp=drive_link) on your image, you can use command line as following
 ```
 python demo.py --task Task_Name --input_dir path_to_images --result_dir save_images_here
 ```
