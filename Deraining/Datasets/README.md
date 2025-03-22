@@ -2,12 +2,16 @@ For training and testing, your directory structure should look like this
   
  `Datasets` <br/>
  `├──train`  <br/>
-     `└──Rain13K`   <br/>
-          `├──input`   <br/>
-          `└──target`   <br/>
+     `└──input`   <br/>
+     `├──target1`   <br/>
+     `└──target2`   <br/>
+ `├──val`  <br/>
+     `└──input`   <br/>
+     `├──target1`   <br/>
+     `└──target2`   <br/>
  `└──test`  <br/>
-     `├──Test100`   <br/>
-          `├──input`   <br/>
+     `└──input`   <br/>
+<!--           `├──input`   <br/>
           `└──target`   <br/>
      `├──Rain100H`  <br/>
           `├──input`   <br/>
@@ -20,4 +24,4 @@ For training and testing, your directory structure should look like this
           `└──target`   <br/>
      `└──Test2800`<br/>
           `├──input`   <br/>
-          `└──target` 
+          `└──target`  -->
