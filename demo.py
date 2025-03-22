@@ -26,12 +26,7 @@ import numpy as np
 parser = argparse.ArgumentParser(description='Test Restormer on your own images')
 parser.add_argument('--input_dir', default='./demo/degraded/', type=str, help='Directory of input images or path of single image')
 parser.add_argument('--result_dir', default='./demo/restored/', type=str, help='Directory for restored results')
-parser.add_argument('--task', required=True, type=str, help='Task to run', choices=['Motion_Deblurring',
-                                                                                    'Single_Image_Defocus_Deblurring',
-                                                                                    'Deraining',
-                                                                                    'Real_Denoising',
-                                                                                    'Gaussian_Gray_Denoising',
-                                                                                    'Gaussian_Color_Denoising'])
+parser.add_argument('--task', required=True, type=str, help='Task to run', choices=['Deraining'])
 parser.add_argument('--tile', type=int, default=None, help='Tile size (e.g 720). None means testing on the original resolution image')
 parser.add_argument('--tile_overlap', type=int, default=32, help='Overlapping of different tiles')
 
@@ -50,23 +45,9 @@ def save_gray_img(filepath, img):
     cv2.imwrite(filepath, img)
 
 def get_weights_and_parameters(task, parameters):
-    if task == 'Motion_Deblurring':
-        weights = os.path.join('Motion_Deblurring', 'pretrained_models', 'motion_deblurring.pth')
-    elif task == 'Single_Image_Defocus_Deblurring':
-        weights = os.path.join('Defocus_Deblurring', 'pretrained_models', 'single_image_defocus_deblurring.pth')
-    elif task == 'Deraining':
+    
+    if task == 'Deraining':
         weights = os.path.join('Deraining', 'pretrained_models', 'deraining.pth')
-    elif task == 'Real_Denoising':
-        weights = os.path.join('Denoising', 'pretrained_models', 'real_denoising.pth')
-        parameters['LayerNorm_type'] =  'BiasFree'
-    elif task == 'Gaussian_Color_Denoising':
-        weights = os.path.join('Denoising', 'pretrained_models', 'gaussian_color_denoising_blind.pth')
-        parameters['LayerNorm_type'] =  'BiasFree'
-    elif task == 'Gaussian_Gray_Denoising':
-        weights = os.path.join('Denoising', 'pretrained_models', 'gaussian_gray_denoising_blind.pth')
-        parameters['inp_channels'] =  1
-        parameters['out_channels'] =  1
-        parameters['LayerNorm_type'] =  'BiasFree'
     return weights, parameters
 
 task    = args.task
